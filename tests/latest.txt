@@ -1,23 +1,4 @@
 
-> gb-agent@0.1.0 test
-> vitest run
-
-
- RUN  v2.1.9 /home/user/IntentWall/gb-agent
-
- ✓ tests/prompts.test.ts (12 tests) 7ms
- ✓ tests/validator.test.ts (28 tests) 13ms
- ✓ tests/onboarding.test.ts (24 tests) 33ms
- ✓ tests/prompt.test.ts (11 tests) 5ms
- ✓ tests/siteProfile.test.ts (9 tests) 24ms
- ✓ tests/persona.test.ts (3 tests) 4ms
-
- Test Files  6 passed (6)
-      Tests  87 passed (87)
-   Start at  12:13:23
-   Duration  782ms (transform 339ms, setup 0ms, collect 525ms, tests 86ms, environment 1ms, prepare 371ms)
-
-
  RUN  v2.1.9 /home/user/IntentWall/gb-agent
 
  ✓ tests/prompts.test.ts > пакет промптов > версия проставлена и пишется в трейс
@@ -26,7 +7,8 @@
  ✓ tests/prompts.test.ts > пакет промптов > P1 несёт железные правила целиком
  ✓ tests/prompts.test.ts > пакет промптов > P2 и P3 несут свой формат вывода
  ✓ tests/prompts.test.ts > пакет промптов > фиксированные реплики без смайлов и с подстановкой имени
- ✓ tests/prompts.test.ts > пакет промптов > первые реплики тонов — дословно из дизайн-пакета ред. 8 (вход site-first)
+ ✓ tests/prompts.test.ts > пакет промптов > первые реплики тонов — дословно, поставка куратора (задание №1, п.3)
+ ✓ tests/prompts.test.ts > пакет промптов > правило слова: наружу «карточка», «профиль» не употребляется нигде
  ✓ tests/prompts.test.ts > пакет промптов > карточки выбора агента — «как я говорю» дословно из пакета
  ✓ tests/prompts.test.ts > пакет промптов > первый чип агента площадки ведёт в /start
  ✓ tests/prompts.test.ts > двухчастный вывод модели > делит текст и META
@@ -78,20 +60,18 @@
  ✓ tests/onboarding.test.ts > план вопросов: только пробелы > адрес с сайта не закрывает вопрос — нужно разрешение владельца
  ✓ tests/onboarding.test.ts > канон текстов чтения сайта > заголовки стадий — дословно из пакета ред. 8
  ✓ tests/onboarding.test.ts > канон текстов чтения сайта > финал стадий показывает честный процент
- ✓ tests/onboarding.test.ts > канон текстов чтения сайта > честный отказ — дословно из пакета ред. 8
+ ✓ tests/onboarding.test.ts > канон текстов чтения сайта > нечитаемый адрес — реплика куратора, с адресом и приглашением исправить
  ✓ tests/onboarding.test.ts > канон текстов чтения сайта > чипсы входа — порядок и текст пакета ред. 8
  ✓ tests/onboarding.test.ts > канон текстов чтения сайта > переход к добору пробелов называет реальное число вопросов
  ✓ tests/onboarding.test.ts > подтверждение записанного > повторяет ответ владельца
  ✓ tests/onboarding.test.ts > подтверждение записанного > обрезает длинный ответ
  ✓ tests/onboarding.test.ts > подтверждение записанного > пропуск называет пропуском
- ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > за компанию агент говорит «мы»
- ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > за частного специалиста — от его лица
- ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > тип субъекта берётся из tenants, а не из фактов
  ✓ tests/prompt.test.ts > системный промпт > кладёт факты с их id, чтобы модель могла на них сослаться
  ✓ tests/prompt.test.ts > системный промпт > не кладёт служебные agent.*-факты в раздел фактов бизнеса
  ✓ tests/prompt.test.ts > системный промпт > подставляет тон-блок P4 выбранного характера
  ✓ tests/prompt.test.ts > системный промпт > запрещает второе предложение контакта без новой причины
  ✓ tests/prompt.test.ts > системный промпт > после лида перестаёт просить контакт
+ ✓ tests/prompt.test.ts > «вы робот?» — фикс-ответ P1.8 приоритетом > промпт несёт формулировку с именем дела и предложением живого человека
  ✓ tests/prompt.test.ts > воронка > сжимается сразу к контакту, когда человек готов
  ✓ tests/prompt.test.ts > воронка > идёт greeting → discovery
  ✓ tests/prompt.test.ts > воронка > идёт discovery → value после пары ходов
@@ -107,9 +87,12 @@
  ✓ tests/siteProfile.test.ts > машинный лог чтения — реальные стадии > строки лога соответствуют найденному
  ✓ tests/siteProfile.test.ts > машинный лог чтения — реальные стадии > ничего не найдено — лог честный
  ✓ tests/siteProfile.test.ts > склейка страниц для модели > режет по лимиту и не теряет адреса страниц
+ ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > за компанию агент говорит «мы»
+ ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > за частного специалиста — от его лица
+ ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > тип субъекта берётся из tenants, а не из фактов
 
  Test Files  6 passed (6)
-      Tests  87 passed (87)
-   Start at  12:13:24
-   Duration  789ms (transform 364ms, setup 0ms, collect 527ms, tests 74ms, environment 1ms, prepare 374ms)
+      Tests  89 passed (89)
+   Start at  12:48:18
+   Duration  1.11s (transform 464ms, setup 0ms, collect 688ms, tests 110ms, environment 1ms, prepare 474ms)
 
