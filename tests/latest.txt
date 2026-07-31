@@ -93,6 +93,6 @@
 
  Test Files  6 passed (6)
       Tests  89 passed (89)
-   Start at  13:22:42
-   Duration  893ms (transform 369ms, setup 0ms, collect 579ms, tests 81ms, environment 1ms, prepare 421ms)
+   Start at  13:39:07
+   Duration  953ms (transform 450ms, setup 0ms, collect 668ms, tests 79ms, environment 1ms, prepare 471ms)
 
