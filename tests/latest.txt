@@ -67,6 +67,12 @@
  ✓ tests/onboarding.test.ts > подтверждение записанного > повторяет ответ владельца
  ✓ tests/onboarding.test.ts > подтверждение записанного > обрезает длинный ответ
  ✓ tests/onboarding.test.ts > подтверждение записанного > пропуск называет пропуском
+ ✓ tests/onboarding.test.ts > отказ заполнять поле (skip) > видит отказ в типичных формулировках
+ ✓ tests/onboarding.test.ts > отказ заполнять поле (skip) > не принимает за отказ настоящий ответ
+ ✓ tests/onboarding.test.ts > отказ заполнять поле (skip) > реплика на пропуск честная — про пробел, а не про запись
+ ✓ tests/onboarding.test.ts > отказ заполнять поле (skip) > skip — полноправный класс хода
+ ✓ tests/onboarding.test.ts > примеры ответов в вопросах > ни один вопрос канона не носит зашитых примеров
+ ✓ tests/onboarding.test.ts > примеры ответов в вопросах > в вопросах не осталось слов демо-мастерской
  ✓ tests/prompt.test.ts > системный промпт > кладёт факты с их id, чтобы модель могла на них сослаться
  ✓ tests/prompt.test.ts > системный промпт > не кладёт служебные agent.*-факты в раздел фактов бизнеса
  ✓ tests/prompt.test.ts > системный промпт > подставляет тон-блок P4 выбранного характера
@@ -90,12 +96,20 @@
  ✓ tests/siteProfile.test.ts > машинный лог чтения — реальные стадии > строки лога соответствуют найденному
  ✓ tests/siteProfile.test.ts > машинный лог чтения — реальные стадии > ничего не найдено — лог честный
  ✓ tests/siteProfile.test.ts > склейка страниц для модели > режет по лимиту и не теряет адреса страниц
+ ✓ tests/siteProfile.test.ts > сводка после чтения > режим работы идёт с приставкой «Работаем»
+ ✓ tests/siteProfile.test.ts > сводка после чтения > длительность идёт отдельной фразой, без «Работаем»
+ ✓ tests/gapQuestions.test.ts > подсказки к вопросам добора > берёт живой вопрос и примеры для этого дела
+ ✓ tests/gapQuestions.test.ts > подсказки к вопросам добора > выбрасывает примеры с цифрами
+ ✓ tests/gapQuestions.test.ts > подсказки к вопросам добора > не пропускает шаги мимо плана
+ ✓ tests/gapQuestions.test.ts > подсказки к вопросам добора > не берёт формулировку, которая перестала быть вопросом
+ ✓ tests/gapQuestions.test.ts > подсказки к вопросам добора > на мусор отвечает пустыми подсказками, а не падением
+ ✓ tests/gapQuestions.test.ts > подсказки к вопросам добора > оставляет не больше трёх примеров
  ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > за компанию агент говорит «мы»
  ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > за частного специалиста — от его лица
  ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > тип субъекта берётся из tenants, а не из фактов
 
- Test Files  6 passed (6)
-      Tests  92 passed (92)
-   Start at  14:22:08
-   Duration  1.00s (transform 456ms, setup 0ms, collect 658ms, tests 96ms, environment 1ms, prepare 489ms)
+ Test Files  7 passed (7)
+      Tests  106 passed (106)
+   Start at  18:17:09
+   Duration  1.17s (transform 547ms, setup 0ms, collect 734ms, tests 97ms, environment 1ms, prepare 506ms)
 
