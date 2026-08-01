@@ -127,6 +127,24 @@
  ✓ tests/prompts.test.ts > §7 дикий ввод > P2 несёт правила РАСКЛАДКА и ПРАВДОПОДОБИЕ
  ✓ tests/prompts.test.ts > §7 дикий ввод > файлов в v1 нет нигде в диалоговом промпте
  ✓ tests/prompts.test.ts > §7 дикий ввод > P3 просит готовый план вопросов живым языком
+ ✓ tests/factContract.test.ts > оси контракта — конструкторы > факт с сайта: website + source_supported + unreviewed + draft
+ ✓ tests/factContract.test.ts > оси контракта — конструкторы > факт со слов владельца: owner + self_asserted + confirmed
+ ✓ tests/factContract.test.ts > приёмка ядра, кейс 3 — ИНН словами владельца > остаётся self_asserted, НЕ independently_verified
+ ✓ tests/factContract.test.ts > приёмка ядра, кейс 3 — ИНН словами владельца > independently_verified — только от реестра
+ ✓ tests/factContract.test.ts > приёмка ядра, кейс 2 — сайт устарел, владелец правит > owner_override: слово владельца итоговое, значение сайта сохранено
+ ✓ tests/factContract.test.ts > приёмка ядра, кейс 2 — сайт устарел, владелец правит > правка в то же значение — это подтверждение, не override
+ ✓ tests/factContract.test.ts > эталон вердикта — legal_name из трёх источников > website + owner + registry, значения сходятся → sources_agree
+ ✓ tests/factContract.test.ts > конфликт без владельца > website против registry → unresolved + conflicted, значение не подменяется
+ ✓ tests/factContract.test.ts > подтверждение и отказ владельца > confirmByOwner добавляет слово владельца поверх сайта → sources_agree
+ ✓ tests/factContract.test.ts > подтверждение и отказ владельца > rejectByOwner помечает факт отвергнутым, историю не трёт
+ ✓ tests/factContract.test.ts > нормализация значений > кавычки, регистр, ё и пробелы — не расхождение
+ ✓ tests/factContract.test.ts > нормализация значений > дубликат-утверждение не плодится
+ ✓ tests/factContract.test.ts > жизненный цикл публикации > draft → published → superseded
+ ✓ tests/factContract.test.ts > совместимость со старой схемой > legacyOrigin: сайт → crawled, слово владельца → owner
+ ✓ tests/factContract.test.ts > совместимость со старой схемой > factFromRow: легаси-строка без новых колонок поднимается в контракт
+ ✓ tests/factContract.test.ts > совместимость со старой схемой > factRowPatch ↔ factFromRow — без потерь
+ ✓ tests/factContract.test.ts > deriveVerification напрямую > документ поддерживает значение → source_supported
+ ✓ tests/factContract.test.ts > deriveVerification напрямую > третья сторона сама по себе не даёт подтверждения
  ✓ tests/prompt.test.ts > системный промпт > кладёт факты с их id, чтобы модель могла на них сослаться
  ✓ tests/prompt.test.ts > системный промпт > не кладёт служебные agent.*-факты в раздел фактов бизнеса
  ✓ tests/prompt.test.ts > системный промпт > подставляет тон-блок P4 выбранного характера
@@ -175,8 +193,8 @@
  ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > за частного специалиста — от его лица
  ✓ tests/persona.test.ts > лицо агента зависит от типа субъекта > тип субъекта берётся из tenants, а не из фактов
 
- Test Files  9 passed (9)
-      Tests  173 passed (173)
-   Start at  06:42:17
-   Duration  1.23s (transform 507ms, setup 0ms, collect 822ms, tests 139ms, environment 2ms, prepare 581ms)
+ Test Files  10 passed (10)
+      Tests  191 passed (191)
+   Start at  07:31:14
+   Duration  1.32s (transform 560ms, setup 0ms, collect 856ms, tests 145ms, environment 2ms, prepare 627ms)
 
