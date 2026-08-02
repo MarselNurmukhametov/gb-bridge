@@ -134,6 +134,9 @@
  ✓ tests/siteReader.test.ts > приписка с именем компании > снимается, и два варианта одного контакта схлопываются в один
  ✓ tests/siteReader.test.ts > приписка с именем компании > не трогает значение, где имя — часть смысла
  ✓ tests/siteReader.test.ts > запасные услуги из заголовков страниц > заголовки-разделы услугой не становятся
+ ✓ tests/siteReader.test.ts > мусорные номера из скриптов (замер proflain.com) > отметки времени телефоном не считаются
+ ✓ tests/siteReader.test.ts > мусорные номера из скриптов (замер proflain.com) > настоящие номера проходят
+ ✓ tests/siteReader.test.ts > мусорные номера из скриптов (замер proflain.com) > голая череда цифр без слова «телефон» рядом не проходит
  ✓ tests/onboarding.test.ts > ссылка на шаге 0 > находит адрес в свободном рассказе
  ✓ tests/onboarding.test.ts > ссылка на шаге 0 > не выдумывает ссылку, когда её нет
  ✓ tests/onboarding.test.ts > ссылка на шаге 0 > обрезает знак препинания на хвосте
@@ -368,6 +371,12 @@
  ✓ tests/webSearchReader.test.ts > веб-поиск — точечный фолбэк, а не путь по умолчанию > есть вещество дела — за поиск не платим
  ✓ tests/webSearchReader.test.ts > веб-поиск — точечный фолбэк, а не путь по умолчанию > без имени или без контактов — тоже тонкое чтение
  ✓ tests/webSearchReader.test.ts > веб-поиск — точечный фолбэк, а не путь по умолчанию > без ключа и модели поиск не запускается ни при каком чтении
+ ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > собирает полную Metahim-подобную карточку без новых утверждений
+ ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > фильтрует текстовые пустышки и не выдумывает разделы
+ ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > не выдаёт обычное описание за позиционирование
+ ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > работает для рассказа владельца без сайта
+ ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > никогда не показывает pending_owner в клиентской карточке
+ ✓ tests/profileComposer.test.ts > внешние технологии не становятся услугами компании > сохраняет AlphaFold только в специальном ключе с доказательством
  ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > промпт — константа с подставленным вопросом сферы
  ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 1: полная лавка — вердикт «да», дыры разобраны
  ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 2: пустая лавка — вердикт «нет» с внятными причинами
@@ -378,12 +387,6 @@
  ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 5: четвёртая проверка за сутки блокируется
  ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 6: в текстах фичи нет процентов, видимости и уровней доверия
  ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > пустые пункты не превращаются в дыры
- ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > собирает полную Metahim-подобную карточку без новых утверждений
- ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > фильтрует текстовые пустышки и не выдумывает разделы
- ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > не выдаёт обычное описание за позиционирование
- ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > работает для рассказа владельца без сайта
- ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > никогда не показывает pending_owner в клиентской карточке
- ✓ tests/profileComposer.test.ts > внешние технологии не становятся услугами компании > сохраняет AlphaFold только в специальном ключе с доказательством
  ✓ tests/copy.test.ts > модуль текстов — единственный источник слов > наружу «лавка»: слова «карточка», «паспорт», «профиль» не выходят
  ✓ tests/copy.test.ts > модуль текстов — единственный источник слов > тот, кто отвечает, называется агентом
  ✓ tests/copy.test.ts > модуль текстов — единственный источник слов > пробелы объясняют потерю, а не упрекают
@@ -487,7 +490,7 @@
  ✓ tests/brief.test.ts > brief safety > возвращает пустой контекст, если подтверждённых фактов нет
 
  Test Files  31 passed (31)
-      Tests  484 passed (484)
-   Start at  19:38:37
-   Duration  5.26s (transform 1.86s, setup 0ms, collect 3.35s, tests 719ms, environment 8ms, prepare 2.74s)
+      Tests  487 passed (487)
+   Start at  21:25:59
+   Duration  4.49s (transform 1.42s, setup 0ms, collect 2.70s, tests 589ms, environment 7ms, prepare 2.40s)
 

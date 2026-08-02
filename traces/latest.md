@@ -14,7 +14,7 @@ Error: ПРОВАЛ: развилка из услуг карточки: []
    - Network:      http://192.0.2.2:3123
 
  ✓ Starting...
- ✓ Ready in 461ms
+ ✓ Ready in 398ms
 [site-reader] verstak-mebel.test:8077: фактов 10, на подтверждение 1 · DETERMINISTIC_CONTACTS:3 · IMPLAUSIBLE_PENDING:trust.credentials(гарантия 400 лет > 50)
 [perplexity] 403 Host not in allowlist: api.perplexity.ai. Add this host to your network egress settings to allow access.
 [site-reader] verstak-mebel.test:8077: фактов 10, на подтверждение 1 · DETERMINISTIC_CONTACTS:3 · IMPLAUSIBLE_PENDING:trust.credentials(гарантия 400 лет > 50)
