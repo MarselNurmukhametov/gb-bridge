@@ -2,14 +2,14 @@
 > gb-agent@0.1.0 e2e
 > node tools/e2e-local.mjs
 
-(node:21420) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/IntentWall/gb-agent/src/lib/copy.ts is not specified and it doesn't parse as CommonJS.
+(node:4232) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/IntentWall/gb-agent/src/lib/copy.ts is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to /home/user/IntentWall/gb-agent/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
 1. интро со ссылкой → чтение начинается сразу
   ✓ адрес сайта уводит прямо в чтение
   ✓ агент ничего не переспрашивает
-2. обход сайта за 53 мс → ["читаю verstak-mebel.test:8077","страниц прочитано: 4"]
+2. обход сайта за 57 мс → ["читаю verstak-mebel.test:8077","страниц прочитано: 4"]
   ✓ сайт прочитан
   ✓ страниц ≥ 3 (фактически 4)
 3. извлечение → «Готово: собрано 41%», собрано 41%
@@ -93,9 +93,9 @@ To eliminate this warning, add "type": "module" to /home/user/IntentWall/gb-agen
   ✓ интервью пошло дальше, а не топчется
 
 === БРИФ АГЕНТА (CURATOR.md 2.1) ===
-бриф собран за 6 мс: Мастерская делает мебель из массива на заказ. Услуги: Кухни из массива, Столы и столешницы.
+бриф собран за 10 мс: Мастерская делает мебель из массива на заказ. Услуги: Кухни из массива, Столы и столешницы.
   ✓ бриф собран при публикации
-  ✓ сборка уложилась в 20 с (6 мс)
+  ✓ сборка уложилась в 20 с (10 мс)
   ✓ в брифе три сценария и карта вопросов
 правим факт владельца: agent.cta = Ответ владельца для теста
   ✓ правка факта пересобрала бриф
@@ -142,7 +142,7 @@ Error: ПРОВАЛ: развилка из услуг карточки: []
    - Network:      http://192.0.2.2:3123
 
  ✓ Starting...
- ✓ Ready in 398ms
+ ✓ Ready in 431ms
 [site-reader] verstak-mebel.test:8077: фактов 10, на подтверждение 1 · DETERMINISTIC_CONTACTS:3 · IMPLAUSIBLE_PENDING:trust.credentials(гарантия 400 лет > 50)
 [perplexity] 403 Host not in allowlist: api.perplexity.ai. Add this host to your network egress settings to allow access.
 [site-reader] verstak-mebel.test:8077: фактов 10, на подтверждение 1 · DETERMINISTIC_CONTACTS:3 · IMPLAUSIBLE_PENDING:trust.credentials(гарантия 400 лет > 50)
