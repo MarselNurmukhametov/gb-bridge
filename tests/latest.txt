@@ -305,6 +305,16 @@
  ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > работает для рассказа владельца без сайта
  ✓ tests/profileComposer.test.ts > PROFILE COMPOSER > никогда не показывает pending_owner в клиентской карточке
  ✓ tests/profileComposer.test.ts > внешние технологии не становятся услугами компании > сохраняет AlphaFold только в специальном ключе с доказательством
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > промпт — константа с подставленным вопросом сферы
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 1: полная лавка — вердикт «да», дыры разобраны
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 2: пустая лавка — вердикт «нет» с внятными причинами
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > «нет цен» внутри объяснения не переворачивает вердикт
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > «просят все модели» — только то, что назвали обе
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > дыра ведёт в нужный слот анатомии
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 3: видна разница с прошлым разом
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 5: четвёртая проверка за сутки блокируется
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > кейс 6: в текстах фичи нет процентов, видимости и уровней доверия
+ ✓ tests/aiReview.test.ts > AI-REVIEW — приёмка > пустые пункты не превращаются в дыры
  ✓ tests/copy.test.ts > модуль текстов — единственный источник слов > наружу «лавка»: слова «карточка», «паспорт», «профиль» не выходят
  ✓ tests/copy.test.ts > модуль текстов — единственный источник слов > тот, кто отвечает, называется агентом
  ✓ tests/copy.test.ts > модуль текстов — единственный источник слов > пробелы объясняют потерю, а не упрекают
@@ -346,6 +356,8 @@
  ✓ tests/webSearchReader.test.ts > раздел «что не подтверждено» строит код, не модель > пробелы называются, даже если модель промолчала
  ✓ tests/webSearchReader.test.ts > раздел «что не подтверждено» строит код, не модель > заполненные цены в список пробелов не попадают
  ✓ tests/webSearchReader.test.ts > раздел «что не подтверждено» строит код, не модель > пункты модели сохраняются и не дублируются
+ ✓ tests/webSearchReader.test.ts > якорь по домену и пустой вход > sameSite: свой домен и поддомен — да, однофамилец — нет
+ ✓ tests/webSearchReader.test.ts > якорь по домену и пустой вход > ридер на пустом входе фактов не сочиняет
  ✓ tests/bap.test.ts > BAP v0.2 — язык интервью > каждый путь ложится в существующее хранилище фактов
  ✓ tests/bap.test.ts > BAP v0.2 — язык интервью > пути покрывают то, без чего агент не работает
  ✓ tests/bap.test.ts > BAP v0.2 — язык интервью > старый ключ разрешается в путь — хранение прежнее, язык новый
@@ -357,8 +369,6 @@
  ✓ tests/bap.test.ts > шаг интервью: канон и путь BAP > путь BAP становится полноценным шагом — старая анкета больше не рамка
  ✓ tests/bap.test.ts > шаг интервью: канон и путь BAP > список ждёт нескольких позиций — по этому видно неполный ответ
  ✓ tests/bap.test.ts > шаг интервью: канон и путь BAP > неизвестный id шагом не становится
- ✓ tests/webSearchReader.test.ts > якорь по домену и пустой вход > sameSite: свой домен и поддомен — да, однофамилец — нет
- ✓ tests/webSearchReader.test.ts > якорь по домену и пустой вход > ридер на пустом входе фактов не сочиняет
  ✓ tests/wildInput.test.ts > §7.3 пустой ввод > пустое, точка, случайный символ — тривиальный ввод
  ✓ tests/wildInput.test.ts > §7.3 пустой ввод > короткие осмысленные — нет
  ✓ tests/wildInput.test.ts > §7.3 пустой ввод > реплика — константа пакета
@@ -406,8 +416,8 @@
  ✓ tests/brief.test.ts > brief safety > не переносит pending_owner во внутренний бриф агента
  ✓ tests/brief.test.ts > brief safety > возвращает пустой контекст, если подтверждённых фактов нет
 
- Test Files  26 passed (26)
-      Tests  404 passed (404)
-   Start at  13:29:17
-   Duration  4.17s (transform 2.19s, setup 0ms, collect 3.29s, tests 511ms, environment 5ms, prepare 2.18s)
+ Test Files  27 passed (27)
+      Tests  414 passed (414)
+   Start at  13:47:53
+   Duration  5.13s (transform 2.34s, setup 0ms, collect 4.59s, tests 595ms, environment 6ms, prepare 2.57s)
 
