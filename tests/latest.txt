@@ -1,71 +1,71 @@
 
  RUN  v2.1.9 /home/user/gb-agent
 
- ✓ tests/validator.test.ts (99 tests) 67ms
- ✓ tests/lavka.test.ts (26 tests) 30ms
- ✓ tests/cardGen.test.ts (51 tests) 55ms
- ✓ tests/siteReader.test.ts (49 tests) 63ms
- ✓ tests/onboarding.test.ts (35 tests) 32ms
- ✓ tests/card.test.ts (44 tests) 40ms
- ✓ tests/cardEdit.test.ts (28 tests) 32ms
- ✓ tests/freeTalk.test.ts (31 tests) 26ms
- ✓ tests/interviewer.test.ts (28 tests) 21ms
- ✓ tests/semanticCloud.test.ts (28 tests) 64ms
- ✓ tests/prompts.test.ts (23 tests) 31ms
- ✓ tests/speechCheck.test.ts (21 tests) 28ms
- ✓ tests/cardView.test.ts (29 tests) 33ms
- ✓ tests/cardJsonLd.test.ts (25 tests) 29ms
- ✓ tests/passportView.test.ts (19 tests) 37ms
- ✓ tests/factContract.test.ts (19 tests) 37ms
- ✓ tests/cardInterview.test.ts (21 tests) 17ms
- ✓ tests/plausibility.test.ts (23 tests) 52ms
- ✓ tests/cardFromFacts.test.ts (14 tests) 11ms
- ✓ tests/availability.test.ts (22 tests) 12ms
- ✓ tests/normalizeFacts.test.ts (18 tests) 13ms
- ✓ tests/slogan.test.ts (13 tests) 12ms
- ✓ tests/seed.test.ts (16 tests) 40ms
- ✓ tests/siteProfile.test.ts (14 tests) 33ms
- ✓ tests/catalog.test.ts (19 tests) 36ms
- ✓ tests/slotContracts.test.ts (15 tests) 22ms
- ✓ tests/rateLimit.test.ts (20 tests) 38ms
- ✓ tests/copy.test.ts (6 tests) 132ms
- ✓ tests/webSearchReader.test.ts (13 tests) 18ms
- ✓ tests/aiReview.test.ts (10 tests) 11ms
- ✓ tests/profileComposer.test.ts (6 tests) 12ms
- ✓ tests/interviewSpeech.test.ts (16 tests) 18ms
+ ✓ tests/validator.test.ts (99 tests) 84ms
+ ✓ tests/lavka.test.ts (26 tests) 67ms
+ ✓ tests/cardGen.test.ts (51 tests) 87ms
+ ✓ tests/siteReader.test.ts (49 tests) 112ms
+ ✓ tests/card.test.ts (44 tests) 30ms
+ ✓ tests/onboarding.test.ts (35 tests) 52ms
+ ✓ tests/cardEdit.test.ts (28 tests) 28ms
+ ✓ tests/freeTalk.test.ts (31 tests) 38ms
+ ✓ tests/interviewer.test.ts (28 tests) 33ms
+ ✓ tests/semanticCloud.test.ts (28 tests) 78ms
+ ✓ tests/prompts.test.ts (23 tests) 18ms
+ ✓ tests/cardView.test.ts (29 tests) 32ms
+ ✓ tests/speechCheck.test.ts (21 tests) 17ms
+ ✓ tests/cardJsonLd.test.ts (25 tests) 35ms
+ ✓ tests/passportView.test.ts (19 tests) 30ms
+ ✓ tests/factContract.test.ts (19 tests) 22ms
+ ✓ tests/catalog.test.ts (25 tests) 36ms
+ ✓ tests/cardInterview.test.ts (21 tests) 38ms
+ ✓ tests/plausibility.test.ts (23 tests) 66ms
+ ✓ tests/cardFromFacts.test.ts (14 tests) 12ms
+ ✓ tests/availability.test.ts (22 tests) 13ms
+ ✓ tests/normalizeFacts.test.ts (18 tests) 23ms
+ ✓ tests/slogan.test.ts (13 tests) 29ms
+ ✓ tests/seed.test.ts (16 tests) 14ms
+ ✓ tests/siteProfile.test.ts (14 tests) 32ms
+ ✓ tests/slotContracts.test.ts (15 tests) 26ms
+ ✓ tests/rateLimit.test.ts (20 tests) 40ms
+ ✓ tests/copy.test.ts (6 tests) 88ms
+ ✓ tests/webSearchReader.test.ts (13 tests) 23ms
+ ✓ tests/aiReview.test.ts (10 tests) 18ms
+ ✓ tests/profileComposer.test.ts (6 tests) 11ms
+ ✓ tests/interviewSpeech.test.ts (16 tests) 10ms
  ✓ tests/businessType.test.ts (13 tests) 10ms
- ✓ tests/entry.test.ts (11 tests) 16ms
- ✓ tests/seedIntake.test.ts (12 tests) 15ms
- ✓ tests/titleGuard.test.ts (10 tests) 7ms
+ ✓ tests/entry.test.ts (11 tests) 7ms
+ ✓ tests/seedIntake.test.ts (12 tests) 18ms
+ ✓ tests/titleGuard.test.ts (10 tests) 26ms
+ ✓ tests/cardAgent.test.ts (14 tests) 10ms
+ ✓ tests/ssrf.test.ts (13 tests) 126ms
 stderr | tests/leadDelivery.test.ts > ненастроенный канал — это недоставка, а не тишина > почта есть, но ключа нет — тоже недоставка
 [lead-delivery] email owner@example.com RESEND_API_KEY не задан
 
- ✓ tests/leadDelivery.test.ts (7 tests) 11ms
- ✓ tests/cardAgent.test.ts (14 tests) 14ms
- ✓ tests/ssrf.test.ts (13 tests) 105ms
- ✓ tests/shopId.test.ts (10 tests) 36ms
- ✓ tests/industryPlan.test.ts (8 tests) 13ms
- ✓ tests/talkTurn.test.ts (9 tests) 8ms
- ✓ tests/gapQuestions.test.ts (10 tests) 6ms
- ✓ tests/reasoningBudget.test.ts (6 tests) 10ms
- ✓ tests/wildInput.test.ts (12 tests) 33ms
- ✓ tests/bap.test.ts (11 tests) 13ms
- ✓ tests/cardAccept.test.ts (9 tests) 30ms
+ ✓ tests/leadDelivery.test.ts (7 tests) 14ms
+ ✓ tests/industryPlan.test.ts (8 tests) 15ms
+ ✓ tests/shopId.test.ts (10 tests) 48ms
+ ✓ tests/talkTurn.test.ts (9 tests) 10ms
+ ✓ tests/gapQuestions.test.ts (10 tests) 7ms
+ ✓ tests/reasoningBudget.test.ts (6 tests) 6ms
+ ✓ tests/bap.test.ts (11 tests) 20ms
+ ✓ tests/wildInput.test.ts (12 tests) 9ms
  ✓ tests/passportRender.test.ts (6 tests) 9ms
- ✓ tests/leadCapture.test.ts (9 tests) 15ms
- ✓ tests/faqLoop.test.ts (7 tests) 11ms
- ✓ tests/cardIndexing.test.ts (8 tests) 5ms
- ✓ tests/talkPassport.test.ts (4 tests) 7ms
- ✓ tests/readBudget.test.ts (5 tests) 8ms
- ✓ tests/modelPlan.test.ts (6 tests) 4ms
- ✓ tests/contactValue.test.ts (6 tests) 10ms
- ✓ tests/machineNames.test.ts (2 tests) 18ms
- ✓ tests/testShop.test.ts (4 tests) 4ms
- ✓ tests/fallback.test.ts (4 tests) 9ms
- ✓ tests/modelRouting.test.ts (4 tests) 5ms
+ ✓ tests/cardAccept.test.ts (9 tests) 31ms
+ ✓ tests/faqLoop.test.ts (7 tests) 8ms
+ ✓ tests/leadCapture.test.ts (9 tests) 11ms
+ ✓ tests/cardIndexing.test.ts (8 tests) 9ms
+ ✓ tests/talkPassport.test.ts (4 tests) 8ms
+ ✓ tests/readBudget.test.ts (5 tests) 18ms
+ ✓ tests/contactValue.test.ts (6 tests) 17ms
+ ✓ tests/machineNames.test.ts (2 tests) 6ms
+ ✓ tests/modelPlan.test.ts (6 tests) 5ms
+ ✓ tests/testShop.test.ts (4 tests) 8ms
+ ✓ tests/modelRouting.test.ts (4 tests) 8ms
+ ✓ tests/fallback.test.ts (4 tests) 14ms
  ✓ tests/brief.test.ts (2 tests) 3ms
 
  Test Files  60 passed (60)
-      Tests  1023 passed (1023)
-   Start at  20:15:06
-   Duration  11.84s (transform 2.33s, setup 0ms, collect 6.57s, tests 1.53s, environment 23ms, prepare 6.62s)
+      Tests  1029 passed (1029)
+   Start at  20:44:34
+   Duration  12.38s (transform 2.86s, setup 0ms, collect 7.74s, tests 1.72s, environment 22ms, prepare 6.54s)
