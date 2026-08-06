@@ -2,14 +2,14 @@
 > gb-agent@0.1.0 e2e
 > node tools/e2e-local.mjs
 
-(node:26222) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/gb-agent/src/lib/copy.ts is not specified and it doesn't parse as CommonJS.
+(node:28283) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/gb-agent/src/lib/copy.ts is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to /home/user/gb-agent/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
 1. интро со ссылкой → чтение начинается сразу
   ✓ адрес сайта уводит прямо в чтение
   ✓ агент ничего не переспрашивает
-2. обход сайта за 58 мс → ["читаю verstak-mebel.test:8077","страниц прочитано: 4"]
+2. обход сайта за 64 мс → ["читаю verstak-mebel.test:8077","страниц прочитано: 4"]
   ✓ сайт прочитан
   ✓ страниц ≥ 3 (фактически 4)
 3. извлечение → «Готово: собрано 41%», собрано 41%
@@ -41,14 +41,14 @@ To eliminate this warning, add "type": "module" to /home/user/gb-agent/package.j
   ✓ интервью не превращается в бесконечный опрос
   ✓ GET: черновик помнит завершённое интервью
   ✓ лавка опубликована
-  ✓ публикация отдала ссылку на правку (/t/verstak-mebel-test-8077-w7bm/edit?t=mv7uov0z6o8m284babk8bj)
+  ✓ публикация отдала ссылку на правку (/t/verstak-mebel-test-8077-m9fl/edit?t=p2m24im9oxbrbdgt89r3i)
   ✓ лавка из двенадцати слотов записана в базу
   ✓ у лавки есть имя дела: без него агент не назовёт его вслух
 5. трейсов записано: 9
   ✓ трейсы на интро, скан, извлечение и каждый вопрос
   ✓ трейс обхода
   ✓ трейс извлечения
-  ✓ у каждого факта с сайта есть ссылка на источник (фактов 10)
+  ✓ у каждого факта с сайта есть ссылка на источник (фактов 11)
   ✓ адрес с сайта попал в карточку и ждёт решения владельца
   ✓ crawled-факты — website-утверждения контракта (unreviewed, source_supported, draft)
   ✓ слово владельца — owner-утверждение, self_asserted (кейс 3 приёмки ядра)
@@ -263,7 +263,7 @@ fail-closed: публикуемых строк с «400 лет» — 0
 сырой ответ:   Кухни из массива — от 180 000 ₽, изготовление 3–5 недель. Оставьте имя и телефон — запишу вас на бесплатный замер.…
 проверка:      passed
 флаги:         —
-стоимость:     0.0072 ₽ · 7 мс · промпт 2.4
+стоимость:     0.0072 ₽ · 6 мс · промпт 2.4
 
 === ЛАВКА БЕЗ КАРТОЧКИ ===
 ответ роута: 404 · Такой карточки нет
@@ -305,7 +305,7 @@ fail-closed: публикуемых строк с «400 лет» — 0
   ✓ агент называет адрес и зовёт исправить опечатку
 владелец: http://verstak-mebel.test:8077  (правильный адрес)
   ✓ повторный адрес принят тем же черновиком
-   агент: Готово: собрано 41% · фактов 11
+   агент: Готово: собрано 41% · фактов 10
   ✓ со второго раза сайт прочитан
   ✓ второй черновик не плодится
 
