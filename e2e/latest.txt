@@ -2,14 +2,14 @@
 > gb-agent@0.1.0 e2e
 > node tools/e2e-local.mjs
 
-(node:1976) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/gb-agent/src/lib/copy.ts is not specified and it doesn't parse as CommonJS.
+(node:3576) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/gb-agent/src/lib/copy.ts is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to /home/user/gb-agent/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
 1. интро со ссылкой → чтение начинается сразу
   ✓ адрес сайта уводит прямо в чтение
   ✓ агент ничего не переспрашивает
-2. обход сайта за 47 мс → ["читаю verstak-mebel.test:8077","страниц прочитано: 4"]
+2. обход сайта за 52 мс → ["читаю verstak-mebel.test:8077","страниц прочитано: 4"]
   ✓ сайт прочитан
   ✓ страниц ≥ 3 (фактически 4)
 3. извлечение → «Готово: собрано 41%», собрано 41%
@@ -41,14 +41,14 @@ To eliminate this warning, add "type": "module" to /home/user/gb-agent/package.j
   ✓ интервью не превращается в бесконечный опрос
   ✓ GET: черновик помнит завершённое интервью
   ✓ лавка опубликована
-  ✓ публикация отдала ссылку на правку (/t/verstak-mebel-test-8077-18c4/edit?t=b572u2euvyaegramsa5oe6)
+  ✓ публикация отдала ссылку на правку (/t/verstak-mebel-test-8077-orl9/edit?t=f1m93elpd95e049tv1ao58)
   ✓ лавка из двенадцати слотов записана в базу
   ✓ у лавки есть имя дела: без него агент не назовёт его вслух
 5. трейсов записано: 9
   ✓ трейсы на интро, скан, извлечение и каждый вопрос
   ✓ трейс обхода
   ✓ трейс извлечения
-  ✓ у каждого факта с сайта есть ссылка на источник (фактов 10)
+  ✓ у каждого факта с сайта есть ссылка на источник (фактов 12)
   ✓ адрес с сайта попал в карточку и ждёт решения владельца
   ✓ crawled-факты — website-утверждения контракта (unreviewed, source_supported, draft)
   ✓ слово владельца — owner-утверждение, self_asserted (кейс 3 приёмки ядра)
@@ -97,9 +97,9 @@ To eliminate this warning, add "type": "module" to /home/user/gb-agent/package.j
   ✓ интервью пошло дальше, а не топчется
 
 === БРИФ АГЕНТА (CURATOR.md 2.1) ===
-бриф собран за 7 мс: Мастерская делает мебель из массива на заказ. Услуги: Кухни из массива, Столы и столешницы.
+бриф собран за 6 мс: Мастерская делает мебель из массива на заказ. Услуги: Кухни из массива, Столы и столешницы.
   ✓ бриф собран при публикации
-  ✓ сборка уложилась в 20 с (7 мс)
+  ✓ сборка уложилась в 20 с (6 мс)
   ✓ в брифе три сценария и карта вопросов
 правим факт владельца: agent.cta = Ответ владельца для теста
   ✓ правка факта пересобрала бриф
